@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL 二維碼生成器</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>URL 二維碼生成器</h1>
+        <div class="input-group">
+            <input type="text" id="urlInput" placeholder="輸入 URL">
+            <button id="generateBtn">生成</button>
+        </div>
+        <div id="shortUrl" class="result"></div>
+        <div id="qrcode" class="result"></div>
+        <button id="downloadBtn" class="hidden">下載二維碼</button>
+    </div>
+</body>
+</html>
